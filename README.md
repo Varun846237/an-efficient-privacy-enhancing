@@ -1,6 +1,6 @@
 An Efficient Privacy-Enhancing Cross-Silo Federated Learning for False Data Injection Attack Detection in Smart Grids
 
- 1. Project Overview
+ ##1. Project Overview
 
 This project is associated with the study of false data injection attack detection in smart-grid environments, with an emphasis on machine learning, data security, and privacy-aware system design.
 
@@ -8,7 +8,7 @@ The current repository contains a Python and Django web application that provide
 
 The broader research topic explores cross-silo federated learning, where multiple participants can collaboratively develop machine-learning models without directly sharing their raw data.
 
- 2. Project Objectives
+ ##2. Project Objectives
 
 - Explore machine-learning approaches to classification and attack-detection problems.
 - Develop a Django-based application for submitting data and displaying classification predictions.
@@ -17,7 +17,7 @@ The broader research topic explores cross-silo federated learning, where multipl
 - Study the role of data privacy and secure collaborative learning in sensitive application domains.
 - Identify the implementation and validation work required to connect a research framework with a reproducible software system.
 
- 3. Current Implementation
+ ##3. Current Implementation
 
 The inspected code includes the following components:
 
@@ -41,7 +41,7 @@ The service-provider workflow trains and evaluates the individual classifiers. T
 
 Note:The listed implementation reflects the inspected Python source files. It does not establish that the application has been tested successfully in every environment or that the reported classification results are reproducible.
 
- 4. Current Machine-Learning Workflow
+ ##4. Current Machine-Learning Workflow
 
 The inspected training and prediction code follows this general workflow:
 
@@ -58,7 +58,7 @@ The inspected training and prediction code follows this general workflow:
 
 The current implementation uses text-based features. Therefore, the presence of the project's smart-grid title alone should not be interpreted as evidence that the application has been evaluated on electrical measurements or a verified smart-grid dataset.
 
-5. Research Context and Scope
+##5. Research Context and Scope
 
 The broader research topic concerns privacy-aware collaborative learning for false data injection attack detection in smart grids.
 
@@ -77,7 +77,7 @@ These concepts require separate implementation and verification. In the currentl
 
 They are therefore documented here as research context or potential future work, not as verified capabilities of the current application.
 
-6. Technology Stack
+##6. Technology Stack
 
 - Programming language: Python
 - Web framework: Django
@@ -88,7 +88,7 @@ They are therefore documented here as research context or potential future work,
 - Frontend: HTML, CSS, JavaScript, and Django templates
 - Dataset format: CSV
 
- 7. Repository Structure
+ ##7. Repository Structure
 
 The main project components include:
 
@@ -111,7 +111,7 @@ an-efficient-privacy-enhancing/
 
 This is an overview of the principal files and directories. Other application files, templates, and configuration files may also be present in the repository.
 
-8. Installation and Setup
+##8. Installation and Setup
 
 Prerequisites
 
@@ -122,14 +122,14 @@ Install the following before running the application:
 - MySQL Server.
 - Git.
 
- Step 1: Clone the repository
+ ###Step 1: Clone the repository
 
 
 git clone https://github.com/Varun846237/an-efficient-privacy-enhancing.git
 cd an-efficient-privacy-enhancing
 
 
- Step 2: Create a virtual environment
+ ###Step 2: Create a virtual environment
 
 python -m venv venv
 
@@ -140,7 +140,7 @@ On Windows:
 venv\Scripts\activate
 
 
-Step 3: Install dependencies
+###Step 3: Install dependencies
 
 python -m pip install --upgrade pip
 pip install django pandas numpy scikit-learn xlwt mysqlclient
@@ -148,7 +148,7 @@ pip install django pandas numpy scikit-learn xlwt mysqlclient
 
 If installation fails because of a dependency or version incompatibility, resolve that issue and record the tested package versions in a `requirements.txt` file.
 
-Step 4: Configure MySQL
+###Step 4: Configure MySQL
 
 The current Django settings specify a MySQL database named `an_efficient_privacy_enhancing`.
 
@@ -163,13 +163,13 @@ Configure the database name, username, password, host, and port in the project's
 
 Do not publish database passwords, production secret keys, or other sensitive credentials in the repository.
 
-Step 5: Apply database migrations
+###Step 5: Apply database migrations
 
 python manage.py makemigrations
 python manage.py migrate
 
 
-Step 6: Start the development server
+###Step 6: Start the development server
 
 python manage.py runserver
 
@@ -177,7 +177,7 @@ Open the local address displayed by Django in your terminal.
 
 Setup note:These are the expected setup steps based on the inspected configuration. Successful execution may require additional dependency fixes or local configuration. The application should be tested from a clean environment before the instructions are treated as verified.
 
- 9. Dataset and Reproducibility
+ ##9. Dataset and Reproducibility
 
 The inspected implementation reads `Datasets.csv` and expects the `Body` and `Label` columns for its classification workflow.
 
@@ -193,7 +193,7 @@ Before publishing experimental results, document:
 
 The source and domain of the dataset must be verified before describing it as a smart-grid dataset. Do not publish invented dataset details or unverified performance figures.
 
-10. Current Limitations
+##10. Current Limitations
 
 The current implementation has several limitations that should be considered when interpreting its results:
 
@@ -206,7 +206,7 @@ The current implementation has several limitations that should be considered whe
 
 These limitations define the difference between the current software implementation and the broader research objectives.
 
-11. Future Work
+##11. Future Work
 
 Potential future work includes:
 
@@ -222,13 +222,13 @@ Potential future work includes:
 
 These items are proposed extensions and should not be interpreted as completed functionality.
 
- 12. Academic Integrity and Project Scope
+ ##12. Academic Integrity and Project Scope
 
 This repository documents the current Django-based classification application and its inspected machine-learning workflow. The broader project title reflects the research problem and intended privacy-aware direction. Any claim that federated learning or privacy-preserving mechanisms have been implemented must be supported by the corresponding source code, experimental results, and technical documentation.
 
 The distinction between the current implementation, the research concepts studied, and future development is intentional. It helps ensure that the repository can be assessed accurately and that its technical claims remain verifiable.
 
- 13. Author and Project Information
+ ##13. Author and Project Information
 
 - Project title: An Efficient Privacy-Enhancing Cross-Silo Federated Learning and Applications for False Data Injection Attack Detection in Smart Grids
 - Project type: Undergraduate team project
